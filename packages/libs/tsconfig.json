@@ -8,6 +8,8 @@
     "isolatedModules": false,
     "declaration": true,
     "declarationMap": true,
+    "composite": true,
+    "incremental": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
       "@/*": ["src/*"]

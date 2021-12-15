@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "",
   "main": "src/main.ts",
+  "dependencies": {
+    "vue": "^3.2.11"
+  },
   "devDependencies": {
     "@types/node": "^16.11.11",
     "@vitejs/plugin-vue": "^1.10.1",

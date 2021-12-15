@@ -11,6 +11,9 @@
   "description": "",
   "scripts": {
     "ins": "yarn install && lerna bootstrap",
+    "build": "npm-run-all build:libs build:web",
+    "build:libs": "lerna exec --scope=@demo/libs \"npx vite build --mode production\"",
+    "build:web": "lerna exec --scope=@demo/web \"npx vite build --mode production\"",
     "lint": "npm-run-all --parallel lint:*",
     "lint:libs": "lerna exec --scope=@demo/libs \"npx vue-tsc --noEmit\"",
     "lint:web": "lerna exec --scope=@demo/web \"npx vue-tsc --noEmit\"",
